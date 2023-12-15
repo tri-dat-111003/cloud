@@ -1,12 +1,5 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
-  <request-character-encoding>UTF-8</request-character-encoding>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>Archetype Created Web Application</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
@@ -25,47 +18,5 @@
     <location>/store/views/error_page_option.jsp</location>
   </error-page>
 
-<!--  Admin filter-->
-  <filter>
-    <filter-name>AdminFilter</filter-name>
-    <filter-class>com.bookstore.filter.AdminFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>AdminFilter</filter-name>
-    <url-pattern>/admin/*</url-pattern>
-  </filter-mapping>
-  <filter-mapping>
-    <filter-name>AdminFilter</filter-name>
-    <url-pattern>/admin</url-pattern>
-  </filter-mapping>
 
-<!-- Admin order filter-->
-  <filter>
-    <filter-name>AdminOrderFilter</filter-name>
-    <filter-class>com.bookstore.filter.AdminOrderFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>AdminOrderFilter</filter-name>
-    <url-pattern>/processOrder</url-pattern>
-  </filter-mapping>
-
-<!--  Cart filter-->
-  <filter>
-    <filter-name>CartFilter</filter-name>
-    <filter-class>com.bookstore.filter.CartFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>CartFilter</filter-name>
-    <url-pattern>/showCart</url-pattern>
-  </filter-mapping>
-
-  <!--  Order filter-->
-  <filter>
-    <filter-name>OrderFilter</filter-name>
-    <filter-class>com.bookstore.filter.OrderFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>OrderFilter</filter-name>
-    <url-pattern>/order</url-pattern>
-  </filter-mapping>
 </web-app>

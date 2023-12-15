@@ -6,7 +6,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <%--<img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-12-2022/FahasaT1222_Banner_1263x60.jpg" alt="Ảnh bìa" class="top-slide"style="position: fixed; float: top">--%>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-	<a class="navbar-brand" href="#">GIẤY</a>
+	<a class="navbar-brand" href="#">BOOK</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
 		aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -75,7 +75,7 @@
 				</a>
 			</c:if>
 			<c:if test="${sessionScope.acc == null}">
-				<a class="btn btn-success btn-sm ml-3" href="showCart?uid=0">
+				<a class="btn btn-success btn-sm ml-3" href="login">
 					<i class="fa fa-shopping-cart" style="padding-right: 5px;"></i>Cart <span class="badge badge-light"></span>
 				</a>
 			</c:if>
@@ -85,7 +85,7 @@
 </nav>
 <section class="jumbotron text-center">
 	<div class="container">
-		<h1 class="jumbotron-heading">GIẤY BOOKSTORE</h1>
+		<h1 class="jumbotron-heading">UTE BOOKSTORE</h1>
 		<p class="lead text-muted mb-0">Cửa hàng online chuyên cung cấp sản phẩm tri thức như sách giáo khoa, sách văn học, sách giải</p>
 	</div>
 </section>
